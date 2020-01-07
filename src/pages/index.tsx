@@ -1,5 +1,7 @@
 import React, { FC } from 'react'
-import Header from '../components/header'
+import dynamic from 'next/dynamic'
+
+const Header = dynamic(() => import('../components/header'))
 
 const App: FC = () => (
   <div>
