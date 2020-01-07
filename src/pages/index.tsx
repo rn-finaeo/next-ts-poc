@@ -1,14 +1,9 @@
 import React, { FC } from 'react'
-
-interface AppProps {
-  dummy: string
-}
-
-const Title: FC<AppProps> = ({ dummy }) => <h1>Hello {dummy}!</h1>
+import Header from '../components/header'
 
 const App: FC = () => (
   <div>
-    <Title dummy="world" />
+    <Header dummy="world" />
   </div>
 )
 
